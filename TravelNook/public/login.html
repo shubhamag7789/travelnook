@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TravelNook</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    .home-link {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 1.1rem;
+    }
+    .home-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="home-link">
+    <i class="ri-home-line"></i> Back to Home
+  </a>
+
+  <div class="container">
+    <div class="form-box">
+      <!-- Login Form -->
+      <form id="login" class="input-group">
+        <h2>Login</h2>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box" id="remember"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Login</button>
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Add jQuery first -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Then add your custom scripts -->
+  <script src="js/login.js"></script>
+</body>
+</html>
